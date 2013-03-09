@@ -81,6 +81,8 @@ GEM
       i18n (~> 0.6)
       padrino-core (= 0.10.7)
     rack (1.4.5)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-protection (1.4.0)
       rack
     rack-test (0.6.2)
@@ -122,3 +124,5 @@ DEPENDENCIES
   middleman
   middleman-minify-html
   middleman-smusher
+  rack
+  rack-contrib
