@@ -1,0 +1,19 @@
+= partial 'header'
+
+%section.general-info
+  %h2 Although it's a pretty neat idea, is a Radio Comb really the best use of your ${ price }
+  %h2 Instead why not donate ${ price } to a cool charity or non profit?
+
+%section.charities
+  %h3 Here are some charities and non profit organisations I personally really like:
+
+  %ol.charities-list
+    %li.charities-list-item= link_to 'Wikimedia Foundation', 'http://wikimediafoundation.org/wiki/WMFJA085/en'
+    %li.charities-list-item= link_to 'charity:water', 'https://www.charitywater.org/donate/'
+
+
+  %h3
+    Or:
+    = link_to 'Search for charities you might like', 'http://www.charitynavigator.org/'
+
+= partial 'footer'

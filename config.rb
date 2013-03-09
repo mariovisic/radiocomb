@@ -30,4 +30,5 @@ configure :build do
   activate :minify_javascript
   activate :cache_buster
   activate :smusher
+  activate :minify_html
 end
