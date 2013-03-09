@@ -8,9 +8,7 @@
 
 
 module Rack
-
   class TryStatic
-
     def initialize(app, options)
       @app = app
       @try = ['', *options.delete(:try)]
@@ -30,6 +28,7 @@ module Rack
 end
 
 use Rack::TryStatic, :root => "build", :urls => %w[/], :try => ['.html', 'index.html', '/index.html']
+use Rack::Deflater
 
 # Run your own Rack app here or use this one to serve 404 messages:
 run lambda{ |env|
