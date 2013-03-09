@@ -1,4 +1,3 @@
-require 'susy'
 require 'middleman-smusher'
 
 ###
@@ -28,7 +27,8 @@ set :build_dir,  'build'
 configure :build do
   activate :minify_css
   activate :minify_javascript
-  activate :cache_buster
-  activate :smusher
   activate :minify_html
+  activate :asset_hash
+  activate :smusher
+  activate :gzip
 end
