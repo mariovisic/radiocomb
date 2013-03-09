@@ -1,18 +1,33 @@
 //=require 'normalize'
 
+html, body
+  height: 100%
+
 body
-  background: #fff
-  color: #006699
+  color: #333
+
+#container, header
   width: 960px
   margin: 0 auto
 
+#container
+  clear: both
+  min-height: 100%
+  height: auto !important
+  height: 100%
+  margin-bottom: -72px
+
+#layout_footer
+  height: 72px
+
 header
-  margin-bottom: 2em
+  margin-bottom: 1em
   h1
+    color: #006699
     font-size: 6em
-    line-height: 1em
+    line-height: 0.75em
     text-align: center
-    margin: 0.25em 0
+    margin: 0.15em 0 0.15em 0
 
   h2
     margin: 0
@@ -20,26 +35,59 @@ header
     color: #333
     text-align: right
     margin: 0
-    margin-top: -1.25em
 
     .title
       color: #006699
 
 .video
+  #player
+    width: 930px
+    height: 523px
   iframe
     text-align: center
-    border: 1px solid red
-    margin: 0 !important
-    padding: 0 !important
-    border: 15px solid #333
-    border-radius: 30px
+    border: 20px solid #333
+    border-radius: 25px
 
-// TODO: Start unhiding elements as we go to style them
-section
-  display: none
+.price-survey
+  border: 2px solid #333
+  padding: 2em
+  margin: 3em 0
 
-  &.video
-    display: block
+  h2
+    font-size: 1.75em
+    width: 700px
+    margin-left: 1.5em
+    margin-bottom: 1.5em
+
+  .price-survey-form
+    font-size: 1.75em
+    text-align: center
+
+  .price-survey-label
+    font-weight: bold
+    color: #006699
+    margin-right: 0.5em
+
+  .price-survey-input
+    width: 8em
+
+  .price-survey-submit
+    margin-left: 0.5em
 
 footer
-  display: none
+  clear: both
+  position: relative
+  height: 72px
+  background: #333
+  line-height: 72px
+  text-align: center
+  .footer-links
+    padding: 0
+    li
+      display: inline
+    a
+      padding: 0 1em
+      color: #aaa
+      text-decoration: none
+      &:hover
+        color: #fff

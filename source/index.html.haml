@@ -4,24 +4,22 @@
     = stylesheet_link_tag 'radio'
     %title Radio Comb
   %body
-    = partial 'header'
+    #container
+      = partial 'header'
+      %section.video
+        = partial 'video'
 
-    %section.video
-      = partial 'video'
+      %section.price-survey
+        %h2 To make the product a reality, all we need to know is how is a Radio Comb worth to you?
 
-    %section.price-survey
-      %h4 To make this product a reality, we need your help with a simple question
-      %h4 How much would realistically pay for a Radio Comb?
+        %form.price-survey-form
+          %label.price-survey-label{ for: 'price' } $ USD
+          %input.price-survey-input{ id: 'price', name: 'price', type: 'number', value: 5, min: 1}
+          %input.price-survey-submit{ type: 'submit', value: 'Submit' }
 
-      %form
-        %label{ for: 'price' } $ USD
-        %input{ id: 'price', name: 'price', type: 'number', value: 5, min: 1}
-        %input{ type: 'submit', value: 'Submit' }
-
-    %script{ id: 'donation-template', type: 'text/template' }
-      = partial 'donation_template'
-
-
+      #layout_footer
     = partial 'footer'
 
+  %script{ id: 'donation-template', type: 'text/template' }
+    = partial 'donation_template'
   = javascript_include_tag 'radio'
