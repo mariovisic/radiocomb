@@ -1,7 +1,9 @@
 !!!
 %html
   %head
-    = stylesheet_link_tag 'radio'
+    :sass
+      #{ File.read(File.open(File.dirname(__FILE__) + '/stylesheets/normalize.sass')) }
+      #{ File.read(File.open(File.dirname(__FILE__) + '/stylesheets/radio.sass')) }
     %title Radio Comb
   %body
     #container
@@ -22,4 +24,5 @@
 
   %script{ id: 'donation-template', type: 'text/template' }
     = partial 'donation_template'
-  = javascript_include_tag 'radio'
+  :coffeescript
+    #{ File.read(File.open(File.dirname(__FILE__) + '/javascripts/radio.js.coffee')) }
