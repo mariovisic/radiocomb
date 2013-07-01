@@ -1,129 +1,57 @@
 //=require 'normalize'
 
 html, body
-  height: 100%
-
-body
-  color: #333
-
-#container, header
-  width: 960px
-  margin: 0 auto
-
-#container
-  clear: both
-  min-height: 100%
-  height: auto !important
-  height: 100%
-  margin-bottom: -72px
-
-#layout_footer
-  height: 72px
+  font-family: 'Helvetica', 'Arial', 'sans-serif'
+  text-align: center
+  background: url('images/background.jpg') #fff repeat-x
 
 header
-  margin-bottom: 1em
+  height: 600px
+  box-shadow: inset 0 -3px 3px -3px #666
+  color: #fff
+  text-align: center
+
   h1
-    color: #006699
-    font-size: 6em
-    line-height: 0.75em
-    text-align: center
-    margin: 0.15em 0 0.15em 0
+    margin: 0
+    padding: 0
+    padding-top: 30px
+    font-size: 50px
+    font-weight: normal
 
   h2
     margin: 0
-    font-size: 1.5em
-    color: #333
-    text-align: right
-    margin: 0
+    font-size: 24px
+    font-weight: normal
 
-    .title
-      color: #006699
-
-.video
-  #player
-    width: 930px
-    height: 523px
-  iframe
-    text-align: center
-    border: 20px solid #333
-    border-radius: 25px
+  .video
+    background: #000
+    width: 676px
+    height: 380px
+    margin: 0 auto
+    margin-top: 30px
+    border: 10px solid #fff
 
 .price-survey
-  border: 2px solid #333
-  padding: 2em
-  margin: 3em 0
+  width: 630px
+  margin: 0 auto
+  font-size: 18px
+  padding-top: 50px
 
   h2
-    font-size: 1.75em
-    width: 700px
-    margin-left: 1.5em
-    margin-bottom: 1.5em
-
-  .price-survey-form
-    font-size: 1.75em
-    text-align: center
-
-  .price-survey-label
+    font-size: 18px
+    padding-bottom: 20px
     font-weight: bold
-    color: #006699
-    margin-right: 0.5em
 
-  .price-survey-input
-    width: 8em
+.price-survey-input
+  appearance: none
+  border-radius: 6px
+  font-size: 18px
+  font-weight: bold
+  color: #000
+  padding: 18px
+  background: #F2F2F2
+  border: 1px solid #DFDFDF
+  width: 120px
 
-  .price-survey-submit
-    margin-left: 0.5em
-
-  .price-survey-question
-    color: #006699
-
-.donation-info
-  border: 2px solid #333
-  padding: 2em
-  margin: 3em 0
-
-.donation-info-message
-  color: #006699
-
-.charities-list-item
-  float: left
-  margin-right: 10px
-  width: 150px
-  padding: 2em
-
-.charities-list-item-link
-  display: inline-block
-  border: 1px solid #333
-  padding: 1em
-  width: 150px
-  a
-    &:hover
-      color: #006699
-
-.charities-list-item-description
-  margin-top: 1em
-
-.other-charities
-  clear: both
-  padding-top: 2em
-
-footer
-  clear: both
-  position: relative
-  height: 72px
-  background: #333
-  line-height: 72px
-  text-align: center
-  .footer-links
-    padding: 0
-    li
-      display: inline
-    a
-      padding: 0 1em
-      color: #aaa
-      &:hover
-        color: #fff
-
-a
-  text-decoration: none
-
+.price-survey-label
+  font-weight: bold
