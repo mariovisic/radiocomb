@@ -16,6 +16,11 @@ Radio = {
     templateBody        = template.innerHTML.toString().replace(/{ price }/g, price)
     container.innerHTML = templateBody
 
+    document.getElementsByClassName('video')[0].style.display = 'none'
+    document.getElementsByTagName('header')[0].style.height = 'auto'
+    document.getElementsByTagName('header')[0].style.height = 'auto'
+    document.getElementsByTagName('header')[0].style.padding = '0 0 30px 0'
+
   addVideo: ->
     tag = document.createElement('script')
     tag.src = "//www.youtube.com/iframe_api"
@@ -33,4 +38,5 @@ window.onYouTubeIframeAPIReady = ->
       autoplay: 0
       controls: 1
       showinfo: 0
+      rel:      0
     videoId: 'bllzkS3oU-I'

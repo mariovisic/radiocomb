@@ -14,14 +14,12 @@
 
         %form.price-survey-form
           %label.price-survey-label{ for: 'price' } $USD
-          %input.price-survey-input{ id: 'price', name: 'price', type: 'number', value: 5, min: 1}
+          %input.price-survey-input{ id: 'price', name: 'price', type: 'number', value: 20, min: 1, step: 'any'}
           %input.price-survey-submit{ type: 'submit', value: 'Submit' }
 
       #layout_footer
     %footer
-      %ol.footer-links
-        %li= link_to 'Video from 8 out of 10 cats on Channel 4', 'http://www.channel4.com/programmes/8-out-of-10-cats'
-        %li= link_to 'Source code available on GitHub', 'https://github.com/mariovisic/radiocomb'
+      = link_to 'Video from 8 out of 10 cats on Channel 4', 'http://www.channel4.com/programmes/8-out-of-10-cats'
 
   %script{ id: 'donation-template', type: 'text/template' }
     = partial 'donation_template'
