@@ -17,6 +17,7 @@ set :relative_links, true
 # Build-specific configuration
 configure :build do
   activate :minify_html
+  activate :asset_hash
   activate :gzip
   activate :relative_assets
 
