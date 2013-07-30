@@ -1,0 +1,116 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
+
+audio, canvas, video { display: inline-block; }
+
+audio:not([controls]) { display: none; height: 0; }
+
+[hidden] { display: none; }
+
+html { font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { margin: 0; }
+
+a:focus { outline: thin dotted; }
+a:active, a:hover { outline: 0; }
+
+h1 { font-size: 2em; }
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+dfn { font-style: italic; }
+
+mark { background: yellow; color: black; }
+
+code, kbd, pre, samp { font-family: monospace, serif; font-size: 1em; }
+
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+small { font-size: 80%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+img { border: 0; }
+
+svg:not(:root) { overflow: hidden; }
+
+figure { margin: 0; }
+
+fieldset { border: 1px solid silver; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+
+legend { border: 0; padding: 0; }
+
+button, input, select, textarea { font-family: inherit; font-size: 100%; margin: 0; }
+
+button, input { line-height: normal; }
+
+button, html input[type='button'], input[type='reset'], input[type='submit'] { -webkit-appearance: button; cursor: pointer; }
+
+button[disabled], input[disabled] { cursor: default; }
+
+input[type='checkbox'], input[type='radio'] { box-sizing: border-box; padding: 0; }
+input[type='search'] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type='search']::-webkit-search-cancel-button, input[type='search']::-webkit-search-decoration { -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+textarea { overflow: auto; vertical-align: top; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+html, body { font-family: "Helvetica", "Arial", "sans-serif"; text-align: center; color: black; font-size: 18px; line-height: 18px; }
+
+header { height: 600px; box-shadow: inset 0 -3px 3px -3px #666666; color: white; text-align: center; background: url("images/background.jpg") white repeat-x; }
+header h1 { margin: 0; padding: 0; padding-top: 30px; font-size: 2.75em; line-height: 1.2em; font-weight: normal; }
+header h2 { margin: 0; font-size: 1.35em; line-height: 1.1em; font-weight: normal; }
+header .video { background: black; width: 676px; height: 380px; margin: 0 auto; margin-top: 30px; border: 10px solid white; }
+
+.price-survey, .donation-info { background: white; width: 676px; margin: 50px auto; font-size: 1em; }
+.price-survey h2, .price-survey h3, .donation-info h2, .donation-info h3 { font-size: 1em; line-height: 1.2em; padding-bottom: 20px; font-weight: bold; }
+
+.price-survey-input { appearance: none; border-radius: 6px; font-size: 1em; font-weight: bold; padding: 18px; background: #f2f2f2; border: 1px solid #dfdfdf; width: 200px; margin: 0 30px 0 20px; }
+
+.price-survey-label { font-weight: bold; }
+
+.price-survey-submit { background: #1496d5; border: none; border-radius: 6px; padding: 18px; width: 150px; color: white; box-shadow: 0 3px 0 0 #046594; }
+.price-survey-submit:hover { background: #1075a6; }
+.price-survey-submit:active { background: #046594; }
+
+.donation-info-message { color: #ffa400; }
+
+footer { border-top: 1px solid #e1e1e1; padding: 20px 0; }
+footer a { text-decoration: none; font-size: 0.65em; line-height: 0.65em; color: black; }
+footer a:hover { color: #1496d5; }
+
+.charities-list { list-style-type: none; font-size: 0.8em; }
+
+.charities-list-item { float: left; width: 280px; }
+.charities-list-item:nth-child(odd) { margin-right: 40px; }
+
+.charities-list-item-link { height: 300px; display: table-cell; vertical-align: middle; padding-bottom: 20px; }
+
+.charities-list-item-description { height: 9em; color: #555555; }
+
+.charities-list-item-button { display: inline-block; background: #1496d5; border: none; border-radius: 6px; padding: 18px; margin: 10px 0 60px 0; color: white; width: 200px; box-shadow: 0 3px 0 0 #046594; text-decoration: none; }
+.charities-list-item-button:hover { background: #1075a6; }
+.charities-list-item-button:active { background: #046594; }
+
+.other-charities { clear: both; }
+
+.other-charities-link { text-decoration: none; color: #1496d5; }
+.other-charities-link:hover { color: #046594; }
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px), (min-width: 768px) and (max-width: 1024px) { html, body { font-size: 20px; line-height: 20px; } }
+@media screen and (max-device-width: 768px), (max-width: 768px) { html, body { font-size: 32px; line-height: 32px; }
+  header h1 { font-size: 2em; line-height: 1.1em; }
+  .charities-list-item { float: none; width: 100%; }
+  .charities-list-item-link { display: block; }
+  .charities-list-item-description { height: auto; padding-bottom: 10px; }
+  .charities-list-item-link { height: auto; }
+  .charities-list-item-button { margin-bottom: 80px; } }
