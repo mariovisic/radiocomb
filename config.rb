@@ -1,12 +1,4 @@
 ###
-# Compass
-###
-
-compass_config do |config|
-  config.output_style = :compact
-end
-
-###
 # Page options, layouts, aliases and proxies
 ###
 
@@ -30,5 +22,9 @@ configure :build do
   activate :asset_hash
   activate :gzip
   activate :relative_assets
-end
 
+  compass_config do |config|
+    config.output_style = :compact
+    config.sass_options = { :debug_info => false, :line_comments => false }
+  end
+end
