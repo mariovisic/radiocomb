@@ -28,9 +28,7 @@ GEM
     http_router (0.10.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
-    httpclient (2.3.3)
     i18n (0.6.4)
-    json (1.7.7)
     listen (0.7.3)
     maruku (0.6.1)
       syntax (>= 1.0.0)
@@ -64,9 +62,6 @@ GEM
       padrino-helpers (= 0.10.7)
       sass (>= 3.1.20)
       uglifier (~> 1.2.6)
-    middleman-smusher (3.0.0)
-      middleman (>= 3.0.0)
-      smusher (~> 0.4.9)
     middleman-sprockets (3.0.9)
       middleman-more (>= 3.0.11)
       sprockets (~> 2.1, < 2.5)
@@ -96,10 +91,6 @@ GEM
       rack (~> 1.4)
       rack-protection (~> 1.3)
       tilt (~> 1.3, >= 1.3.3)
-    smusher (0.4.9)
-      httpclient (>= 2.2)
-      json
-      rake
     sprockets (2.4.5)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -126,6 +117,5 @@ DEPENDENCIES
   middleman
   middleman-gh-pages
   middleman-minify-html
-  middleman-smusher
   rack
   rack-contrib
