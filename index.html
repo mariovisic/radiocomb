@@ -1,190 +1,120 @@
 <!DOCTYPE html> <html> <head> <style>
-  /* line 6, (__TEMPLATE__) */
   article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
   
-  /* line 10, (__TEMPLATE__) */
   audio, canvas, video { display: inline-block; }
   
-  /* line 13, (__TEMPLATE__) */
   audio:not([controls]) { display: none; height: 0; }
   
-  /* line 21, (__TEMPLATE__) */
   [hidden] { display: none; }
   
-  /* line 27, (__TEMPLATE__) */
   html { font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
   
-  /* line 36, (__TEMPLATE__) */
   body { margin: 0; }
   
-  /* line 44, (__TEMPLATE__) */
   a:focus { outline: thin dotted; }
-  /* line 48, (__TEMPLATE__) */
   a:active, a:hover { outline: 0; }
   
-  /* line 55, (__TEMPLATE__) */
   h1 { font-size: 2em; }
   
-  /* line 59, (__TEMPLATE__) */
   abbr[title] { border-bottom: 1px dotted; }
   
-  /* line 63, (__TEMPLATE__) */
   b, strong { font-weight: bold; }
   
-  /* line 67, (__TEMPLATE__) */
   dfn { font-style: italic; }
   
-  /* line 71, (__TEMPLATE__) */
   mark { background: yellow; color: black; }
   
-  /* line 76, (__TEMPLATE__) */
   code, kbd, pre, samp { font-family: monospace, serif; font-size: 1em; }
   
-  /* line 81, (__TEMPLATE__) */
   pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
   
-  /* line 87, (__TEMPLATE__) */
   q { quotes: "\201C" "\201D" "\2018" "\2019"; }
   
-  /* line 91, (__TEMPLATE__) */
   small { font-size: 80%; }
   
-  /* line 95, (__TEMPLATE__) */
   sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
   
-  /* line 101, (__TEMPLATE__) */
   sup { top: -0.5em; }
   
-  /* line 104, (__TEMPLATE__) */
   sub { bottom: -0.25em; }
   
-  /* line 111, (__TEMPLATE__) */
   img { border: 0; }
   
-  /* line 115, (__TEMPLATE__) */
   svg:not(:root) { overflow: hidden; }
   
-  /* line 122, (__TEMPLATE__) */
   figure { margin: 0; }
   
-  /* line 129, (__TEMPLATE__) */
   fieldset { border: 1px solid silver; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
   
-  /* line 134, (__TEMPLATE__) */
   legend { border: 0; padding: 0; }
   
-  /* line 141, (__TEMPLATE__) */
   button, input, select, textarea { font-family: inherit; font-size: 100%; margin: 0; }
   
-  /* line 152, (__TEMPLATE__) */
   button, input { line-height: normal; }
   
-  /* line 155, (__TEMPLATE__) */
   button, html input[type='button'], input[type='reset'], input[type='submit'] { -webkit-appearance: button; cursor: pointer; }
   
-  /* line 164, (__TEMPLATE__) */
   button[disabled], input[disabled] { cursor: default; }
   
-  /* line 168, (__TEMPLATE__) */
   input[type='checkbox'], input[type='radio'] { box-sizing: border-box; padding: 0; }
-  /* line 175, (__TEMPLATE__) */
   input[type='search'] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
-  /* line 185, (__TEMPLATE__) */
   input[type='search']::-webkit-search-cancel-button, input[type='search']::-webkit-search-decoration { -webkit-appearance: none; }
   
-  /* line 189, (__TEMPLATE__) */
   button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
   
-  /* line 193, (__TEMPLATE__) */
   textarea { overflow: auto; vertical-align: top; }
   
-  /* line 204, (__TEMPLATE__) */
   table { border-collapse: collapse; border-spacing: 0; }
   
-  /* line 210, (__TEMPLATE__) */
   html, body { font-family: "Helvetica", "Arial", "sans-serif"; text-align: center; color: black; font-size: 18px; line-height: 18px; }
   
-  /* line 217, (__TEMPLATE__) */
   header { height: 600px; box-shadow: inset 0 -3px 3px -3px #666666; color: white; text-align: center; background: url("images/background-44a2d1b4.jpg") white repeat-x; }
-  /* line 224, (__TEMPLATE__) */
   header h1 { margin: 0; padding: 0; padding-top: 30px; font-size: 2.75em; line-height: 1.2em; font-weight: normal; }
-  /* line 232, (__TEMPLATE__) */
   header h2 { margin: 0; font-size: 1.35em; line-height: 1.1em; font-weight: normal; }
-  /* line 238, (__TEMPLATE__) */
   header .video { background: black; width: 676px; height: 380px; margin: 0 auto; margin-top: 30px; border: 10px solid white; }
   
-  /* line 246, (__TEMPLATE__) */
   .price-survey, .donation-info { background: white; width: 676px; margin: 50px auto; font-size: 1em; }
-  /* line 252, (__TEMPLATE__) */
   .price-survey h2, .price-survey h3, .donation-info h2, .donation-info h3 { font-size: 1em; line-height: 1.2em; padding-bottom: 20px; font-weight: bold; }
   
-  /* line 258, (__TEMPLATE__) */
   .price-survey-input { appearance: none; border-radius: 6px; font-size: 1em; font-weight: bold; padding: 18px; background: #f2f2f2; border: 1px solid #dfdfdf; width: 200px; margin: 0 30px 0 20px; }
   
-  /* line 269, (__TEMPLATE__) */
   .price-survey-label { font-weight: bold; }
   
-  /* line 272, (__TEMPLATE__) */
   .price-survey-submit { background: #1496d5; border: none; border-radius: 6px; padding: 18px; width: 150px; color: white; box-shadow: 0 3px 0 0 #046594; }
-  /* line 280, (__TEMPLATE__) */
   .price-survey-submit:hover { background: #1075a6; }
-  /* line 282, (__TEMPLATE__) */
   .price-survey-submit:active { background: #046594; }
   
-  /* line 285, (__TEMPLATE__) */
   .donation-info-message { color: #ffa400; }
   
-  /* line 288, (__TEMPLATE__) */
   footer { border-top: 1px solid #e1e1e1; padding: 20px 0; }
-  /* line 292, (__TEMPLATE__) */
   footer a { text-decoration: none; font-size: 0.65em; line-height: 0.65em; color: black; }
-  /* line 297, (__TEMPLATE__) */
   footer a:hover { color: #1496d5; }
   
-  /* line 300, (__TEMPLATE__) */
   .charities-list { list-style-type: none; font-size: 0.8em; }
   
-  /* line 304, (__TEMPLATE__) */
   .charities-list-item { float: left; width: 280px; }
-  /* line 308, (__TEMPLATE__) */
   .charities-list-item:nth-child(odd) { margin-right: 40px; }
   
-  /* line 311, (__TEMPLATE__) */
   .charities-list-item-link { height: 300px; display: table-cell; vertical-align: middle; padding-bottom: 20px; }
   
-  /* line 317, (__TEMPLATE__) */
   .charities-list-item-description { height: 9em; color: #555555; }
   
-  /* line 321, (__TEMPLATE__) */
   .charities-list-item-button { display: inline-block; background: #1496d5; border: none; border-radius: 6px; padding: 18px; margin: 10px 0 60px 0; color: white; width: 200px; box-shadow: 0 3px 0 0 #046594; text-decoration: none; }
-  /* line 332, (__TEMPLATE__) */
   .charities-list-item-button:hover { background: #1075a6; }
-  /* line 334, (__TEMPLATE__) */
   .charities-list-item-button:active { background: #046594; }
   
-  /* line 337, (__TEMPLATE__) */
   .other-charities { clear: both; }
   
-  /* line 340, (__TEMPLATE__) */
   .other-charities-link { text-decoration: none; color: #1496d5; }
-  /* line 343, (__TEMPLATE__) */
   .other-charities-link:hover { color: #046594; }
   
-  @media screen and (min-device-width: 768px) and (max-device-width: 1024px), (min-width: 768px) and (max-width: 1024px) { /* line 347, (__TEMPLATE__) */
-    html, body { font-size: 20px; line-height: 20px; } }
-  @media screen and (max-device-width: 768px), (max-width: 768px) { /* line 352, (__TEMPLATE__) */
-    html, body { font-size: 32px; line-height: 32px; }
-    /* line 355, (__TEMPLATE__) */
+  @media screen and (min-device-width: 768px) and (max-device-width: 1024px), (min-width: 768px) and (max-width: 1024px) { html, body { font-size: 20px; line-height: 20px; } }
+  @media screen and (max-device-width: 768px), (max-width: 768px) { html, body { font-size: 32px; line-height: 32px; }
     header h1 { font-size: 2em; line-height: 1.1em; }
-    /* line 358, (__TEMPLATE__) */
     .charities-list-item { float: none; width: 100%; }
-    /* line 361, (__TEMPLATE__) */
     .charities-list-item-link { display: block; }
-    /* line 363, (__TEMPLATE__) */
     .charities-list-item-description { height: auto; padding-bottom: 10px; }
-    /* line 366, (__TEMPLATE__) */
     .charities-list-item-link { height: auto; }
-    /* line 368, (__TEMPLATE__) */
     .charities-list-item-button { margin-bottom: 80px; } }
 </style> <title>Radiocomb</title> </head> <body> <div id=container> <header> <h1>Radiocomb</h1> <h2 class=tagline>You're never alone with a <span class=title>Radio Comb</span></span></h2> <section class=video> <div id=player></div> </section> </header> <section class=price-survey> <h2>To make the product a reality, we need to ask the question: <span class=price-survey-question>How much is a Radio Comb worth to you?</span></h2> <form class=price-survey-form> <label class=price-survey-label for=price>$USD</label> <input class=price-survey-input id=price min=1 name=price required step=any type=number value=20> <input class=price-survey-submit type=submit value=Submit> </form> </section> <div id=layout_footer></div> </div> <footer> <a href="//www.channel4.com/programmes/8-out-of-10-cats">Video from 8 out of 10 cats on Channel 4</a> </footer> </body> <script id=donation-template type='text/template'>
     <header>
