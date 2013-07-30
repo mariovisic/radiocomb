@@ -4,6 +4,8 @@ html, body
   font-family: 'Helvetica', 'Arial', 'sans-serif'
   text-align: center
   color: #000
+  font-size: 18px
+  line-height: 18px
 
 header
   height: 600px
@@ -16,12 +18,14 @@ header
     margin: 0
     padding: 0
     padding-top: 30px
-    font-size: 50px
+    font-size: 2.75em
+    line-height: 1.2em
     font-weight: normal
 
   h2
     margin: 0
-    font-size: 24px
+    font-size: 1.35em
+    line-height: 1.1em
     font-weight: normal
 
   .video
@@ -36,17 +40,18 @@ header
   background: #fff
   width: 676px
   margin: 50px auto
-  font-size: 18px
+  font-size: 1em
 
   h2, h3
-    font-size: 18px
+    font-size: 1em
+    line-height: 1.2em
     padding-bottom: 20px
     font-weight: bold
 
 .price-survey-input
   appearance: none
   border-radius: 6px
-  font-size: 18px
+  font-size: 1em
   font-weight: bold
   padding: 18px
   background: #F2F2F2
@@ -75,20 +80,64 @@ footer
 
   a
     text-decoration: none
-    font-size: 12px
+    font-size: 0.65em
+    line-height: 0.65em
     color: #000
     &:hover
       color: #1496D5
 
 .charities-list
   list-style-type: none
+  font-size: 0.8em
 
 .charities-list-item
   float: left
-  width: 300px
+  width: 280px
 
   &:nth-child(odd)
-    margin-right: 20px
+    margin-right: 40px
+
+.charities-list-item-link
+  height: 300px
+  display: table-cell
+  vertical-align: middle
+  padding-bottom: 20px
+
+.charities-list-item-description
+  height: 100px
+  color: #555
+
+.charities-list-item-button
+  display: inline-block
+  background: #1496D5
+  border: none
+  border-radius: 6px
+  padding: 18px
+  margin: 10px 0 60px 0
+  color: #fff
+  width: 200px
+  box-shadow: 0 3px 0 0 #046594
+  text-decoration: none
+  &:hover
+    background: darken(#1496D5, 10%)
+  &:active
+    background: #046594
 
 .other-charities
   clear: both
+
+.other-charities-link
+  text-decoration: none
+  color: #1496D5
+  &:hover
+    color: #046594
+
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px), (min-width : 768px) and (max-width : 1024px)
+  html, body
+    font-size: 20px
+    line-height: 20px
+
+@media screen and (max-device-width : 768px), (max-width : 768px)
+  html, body
+    font-size: 24px
+    line-height: 24px
