@@ -1,229 +1,229 @@
 <!DOCTYPE html> <html> <head> <style>
-  article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
-  
-  audio, canvas, video { display: inline-block; }
-  
-  audio:not([controls]) { display: none; height: 0; }
-  
-  [hidden] { display: none; }
-  
-  html { font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-  
-  body { margin: 0; }
-  
-  a:focus { outline: thin dotted; }
-  a:active, a:hover { outline: 0; }
-  
-  h1 { font-size: 2em; }
-  
-  abbr[title] { border-bottom: 1px dotted; }
-  
-  b, strong { font-weight: bold; }
-  
-  dfn { font-style: italic; }
-  
-  mark { background: yellow; color: black; }
-  
-  code, kbd, pre, samp { font-family: monospace, serif; font-size: 1em; }
-  
-  pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
-  
-  q { quotes: "\201C" "\201D" "\2018" "\2019"; }
-  
-  small { font-size: 80%; }
-  
-  sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-  
-  sup { top: -0.5em; }
-  
-  sub { bottom: -0.25em; }
-  
-  img { border: 0; }
-  
-  svg:not(:root) { overflow: hidden; }
-  
-  figure { margin: 0; }
-  
-  fieldset { border: 1px solid silver; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
-  
-  legend { border: 0; padding: 0; }
-  
-  button, input, select, textarea { font-family: inherit; font-size: 100%; margin: 0; }
-  
-  button, input { line-height: normal; }
-  
-  button, html input[type='button'], input[type='reset'], input[type='submit'] { -webkit-appearance: button; cursor: pointer; }
-  
-  button[disabled], input[disabled] { cursor: default; }
-  
-  input[type='checkbox'], input[type='radio'] { box-sizing: border-box; padding: 0; }
-  input[type='search'] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
-  input[type='search']::-webkit-search-cancel-button, input[type='search']::-webkit-search-decoration { -webkit-appearance: none; }
-  
-  button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
-  
-  textarea { overflow: auto; vertical-align: top; }
-  
-  table { border-collapse: collapse; border-spacing: 0; }
-  
-  html, body { font-family: "Helvetica", "Arial", "sans-serif"; text-align: center; color: black; font-size: 18px; line-height: 18px; }
-  
-  header { height: 600px; box-shadow: inset 0 -3px 3px -3px #666666; color: white; text-align: center; background: url("images/background-44a2d1b4.jpg") white repeat-x; }
-  header h1 { margin: 0; padding: 0; padding-top: 30px; font-size: 2.75em; line-height: 1.2em; font-weight: normal; }
-  header h2 { margin: 0; font-size: 1.35em; line-height: 1.1em; font-weight: normal; }
-  header .video { background: black; width: 676px; height: 380px; margin: 0 auto; margin-top: 30px; border: 10px solid white; }
-  
-  .price-survey, .donation-info { background: white; width: 676px; margin: 50px auto; font-size: 1em; }
-  .price-survey h2, .price-survey h3, .donation-info h2, .donation-info h3 { font-size: 1em; line-height: 1.2em; padding-bottom: 20px; font-weight: bold; }
-  
-  .price-survey-input { appearance: none; border-radius: 6px; font-size: 1em; font-weight: bold; padding: 18px; background: #f2f2f2; border: 1px solid #dfdfdf; width: 200px; margin: 0 30px 0 20px; }
-  
-  .price-survey-label { font-weight: bold; }
-  
-  .price-survey-submit { background: #1496d5; border: none; border-radius: 6px; padding: 18px; width: 150px; color: white; box-shadow: 0 3px 0 0 #046594; }
-  .price-survey-submit:hover { background: #1075a6; }
-  .price-survey-submit:active { background: #046594; }
-  
-  .donation-info-message { color: #ffa400; }
-  
-  footer { border-top: 1px solid #e1e1e1; padding: 20px 0; }
-  footer a { text-decoration: none; font-size: 0.65em; line-height: 0.65em; color: black; }
-  footer a:hover { color: #1496d5; }
-  
-  .charities-list { list-style-type: none; font-size: 0.8em; }
-  
-  .charities-list-item { float: left; width: 280px; }
-  .charities-list-item:nth-child(odd) { margin-right: 40px; }
-  
-  .charities-list-item-link { height: 300px; display: table-cell; vertical-align: middle; padding-bottom: 20px; }
-  
-  .charities-list-item-description { height: 9em; color: #555555; }
-  
-  .charities-list-item-button { display: inline-block; background: #1496d5; border: none; border-radius: 6px; padding: 18px; margin: 10px 0 60px 0; color: white; width: 200px; box-shadow: 0 3px 0 0 #046594; text-decoration: none; }
-  .charities-list-item-button:hover { background: #1075a6; }
-  .charities-list-item-button:active { background: #046594; }
-  
-  .other-charities { clear: both; }
-  
-  .other-charities-link { text-decoration: none; color: #1496d5; }
-  .other-charities-link:hover { color: #046594; }
-  
-  @media screen and (min-device-width: 768px) and (max-device-width: 1024px), (min-width: 768px) and (max-width: 1024px) { html, body { font-size: 20px; line-height: 20px; } }
-  @media screen and (max-device-width: 768px), (max-width: 768px) { html, body { font-size: 32px; line-height: 32px; }
-    header h1 { font-size: 2em; line-height: 1.1em; }
-    .charities-list-item { float: none; width: 100%; }
-    .charities-list-item-link { display: block; }
-    .charities-list-item-description { height: auto; padding-bottom: 10px; }
-    .charities-list-item-link { height: auto; }
-    .charities-list-item-button { margin-bottom: 80px; } }
-</style> <title>Radiocomb</title> </head> <body> <div id=container> <header> <h1>Radiocomb</h1> <h2 class=tagline>You're never alone with a <span class=title>Radio Comb</span></span></h2> <section class=video> <div id=player></div> </section> </header> <section class=price-survey> <h2>To make the product a reality, we need to ask the question: <span class=price-survey-question>How much is a Radio Comb worth to you?</span></h2> <form class=price-survey-form> <label class=price-survey-label for=price>$USD</label> <input class=price-survey-input id=price min=1 name=price required step=any type=number value=20> <input class=price-survey-submit type=submit value=Submit> </form> </section> <div id=layout_footer></div> </div> <footer> <a href="//www.channel4.com/programmes/8-out-of-10-cats">Video from 8 out of 10 cats on Channel 4</a> </footer> </body> <script id=donation-template type='text/template'>
+      article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
+      
+      audio, canvas, video { display: inline-block; }
+      
+      audio:not([controls]) { display: none; height: 0; }
+      
+      [hidden] { display: none; }
+      
+      html { font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+      
+      body { margin: 0; }
+      
+      a:focus { outline: thin dotted; }
+      a:active, a:hover { outline: 0; }
+      
+      h1 { font-size: 2em; }
+      
+      abbr[title] { border-bottom: 1px dotted; }
+      
+      b, strong { font-weight: bold; }
+      
+      dfn { font-style: italic; }
+      
+      mark { background: yellow; color: black; }
+      
+      code, kbd, pre, samp { font-family: monospace, serif; font-size: 1em; }
+      
+      pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+      
+      q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+      
+      small { font-size: 80%; }
+      
+      sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+      
+      sup { top: -0.5em; }
+      
+      sub { bottom: -0.25em; }
+      
+      img { border: 0; }
+      
+      svg:not(:root) { overflow: hidden; }
+      
+      figure { margin: 0; }
+      
+      fieldset { border: 1px solid silver; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+      
+      legend { border: 0; padding: 0; }
+      
+      button, input, select, textarea { font-family: inherit; font-size: 100%; margin: 0; }
+      
+      button, input { line-height: normal; }
+      
+      button, html input[type='button'], input[type='reset'], input[type='submit'] { -webkit-appearance: button; cursor: pointer; }
+      
+      button[disabled], input[disabled] { cursor: default; }
+      
+      input[type='checkbox'], input[type='radio'] { box-sizing: border-box; padding: 0; }
+      input[type='search'] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+      input[type='search']::-webkit-search-cancel-button, input[type='search']::-webkit-search-decoration { -webkit-appearance: none; }
+      
+      button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+      
+      textarea { overflow: auto; vertical-align: top; }
+      
+      table { border-collapse: collapse; border-spacing: 0; }
+      
+      html, body { font-family: "Helvetica", "Arial", "sans-serif"; text-align: center; color: black; font-size: 18px; line-height: 18px; }
+      
+      header { height: 600px; box-shadow: inset 0 -3px 3px -3px #666666; color: white; text-align: center; background: url("images/background-44a2d1b4.jpg") white repeat-x; }
+      header h1 { margin: 0; padding: 0; padding-top: 30px; font-size: 2.75em; line-height: 1.2em; font-weight: normal; }
+      header h2 { margin: 0; font-size: 1.35em; line-height: 1.1em; font-weight: normal; }
+      header .video { background: black; width: 676px; height: 380px; margin: 0 auto; margin-top: 30px; border: 10px solid white; }
+      
+      .price-survey, .donation-info { background: white; width: 676px; margin: 50px auto; font-size: 1em; }
+      .price-survey h2, .price-survey h3, .donation-info h2, .donation-info h3 { font-size: 1em; line-height: 1.2em; padding-bottom: 20px; font-weight: bold; }
+      
+      .price-survey-input { appearance: none; border-radius: 6px; font-size: 1em; font-weight: bold; padding: 18px; background: #f2f2f2; border: 1px solid #dfdfdf; width: 200px; margin: 0 30px 0 20px; }
+      
+      .price-survey-label { font-weight: bold; }
+      
+      .price-survey-submit { background: #1496d5; border: none; border-radius: 6px; padding: 18px; width: 150px; color: white; box-shadow: 0 3px 0 0 #046594; }
+      .price-survey-submit:hover { background: #1075a6; }
+      .price-survey-submit:active { background: #046594; }
+      
+      .donation-info-message { color: #ffa400; }
+      
+      footer { border-top: 1px solid #e1e1e1; padding: 20px 0; }
+      footer a { text-decoration: none; font-size: 0.65em; line-height: 0.65em; color: black; }
+      footer a:hover { color: #1496d5; }
+      
+      .charities-list { list-style-type: none; font-size: 0.8em; }
+      
+      .charities-list-item { float: left; width: 280px; }
+      .charities-list-item:nth-child(odd) { margin-right: 40px; }
+      
+      .charities-list-item-link { height: 300px; display: table-cell; vertical-align: middle; padding-bottom: 20px; }
+      
+      .charities-list-item-description { height: 9em; color: #555555; }
+      
+      .charities-list-item-button { display: inline-block; background: #1496d5; border: none; border-radius: 6px; padding: 18px; margin: 10px 0 60px 0; color: white; width: 200px; box-shadow: 0 3px 0 0 #046594; text-decoration: none; }
+      .charities-list-item-button:hover { background: #1075a6; }
+      .charities-list-item-button:active { background: #046594; }
+      
+      .other-charities { clear: both; }
+      
+      .other-charities-link { text-decoration: none; color: #1496d5; }
+      .other-charities-link:hover { color: #046594; }
+      
+      @media screen and (min-device-width: 768px) and (max-device-width: 1024px), (min-width: 768px) and (max-width: 1024px) { html, body { font-size: 20px; line-height: 20px; } }
+      @media screen and (max-device-width: 768px), (max-width: 768px) { html, body { font-size: 32px; line-height: 32px; }
+        header h1 { font-size: 2em; line-height: 1.1em; }
+        .charities-list-item { float: none; width: 100%; }
+        .charities-list-item-link { display: block; }
+        .charities-list-item-description { height: auto; padding-bottom: 10px; }
+        .charities-list-item-link { height: auto; }
+        .charities-list-item-button { margin-bottom: 80px; } }
+    </style> <title>Radiocomb</title> </head> <body> <div id=container> <header> <h1>Radiocomb</h1> <h2 class=tagline>You're never alone with a <span class=title>Radio Comb</span></span></h2> <section class=video> <div id=player></div> </section> </header> <section class=price-survey> <h2>To make the product a reality, we need to ask the question: <span class=price-survey-question>How much is a Radio Comb worth to you?</span></h2> <form class=price-survey-form> <label class=price-survey-label for=price>$USD</label> <input class=price-survey-input id=price min=1 name=price required step=any type=number value=20> <input class=price-survey-submit type=submit value=Submit> </form> </section> <div id=layout_footer></div> </div> <footer> <a href="//www.channel4.com/programmes/8-out-of-10-cats">Video from 8 out of 10 cats on Channel 4</a> </footer> </body> <script id=donation-template type='text/template'>
     <header>
-  <h1>Radiocomb</h1>
-  <h2 class='tagline'>You're never alone with a <span class="title">Radio Comb</span></span></h2>
-  <section class='video'>
-    <div id='player'></div>
-  </section>
-</header>
-<section class='donation-info'>
-  <h2>Although it's a pretty neat idea, Radio Comb probably isn't the best use of your ${ price }, Instead why not <span class="donation-info-message">donate ${ price } to a cool charity or non profit</span>?</h2>
-  <section class='charities'>
-    <h3>Here are some charities and non profit organisations I personally really like:</h3>
-    <ol class='charities-list'>
-      <li class='charities-list-item'>
-        <div class='charities-list-item-link'>
-                    <a href="http://wikimediafoundation.org/wiki/WMFJA085/en"><img src='images/wikimedia-56878495.jpg'>
-          </a>
-
-        </div>
-        <div class='charities-list-item-description'>Wikimedia runs Wikipedia. Wikipedia is the #5 site on the web and serves 454 million different people every month - with billions of page views.</div>
-        <a class="charities-list-item-button" href="http://wikimediafoundation.org/wiki/WMFJA085/en">Donate to Wikimedia</a>
-      </li>
-      <li class='charities-list-item'>
-        <div class='charities-list-item-link'>
-                    <a href="https://www.charitywater.org/donate/"><img src='images/charity_water-5f311434.jpg'>
-          </a>
-
-        </div>
-        <div class='charities-list-item-description'>charity: water is a non-profit bringing clean and safe drinking water to people in developing nations. With 100% of public donations can fund water projects.</div>
-        <a class="charities-list-item-button" href="https://www.charitywater.org/donate/">Donate to charity: water</a>
-      </li>
-      <li class='charities-list-item'>
-        <div class='charities-list-item-link'>
-                    <a href="http://donate.worldvision.org/"><img src='images/world_vision-0d4c2cd4.jpg'>
-          </a>
-
-        </div>
-        <div class='charities-list-item-description'>World Vision is a Christian humanitarian organization dedicated to working with children, families and their communities worldwide to reach their full potential by tackling the causes of poverty and injustice</div>
-        <a class="charities-list-item-button" href="http://donate.worldvision.org/">Donate to World vision</a>
-      </li>
-      <li class='charities-list-item'>
-        <div class='charities-list-item-link'>
-                    <a href="https://support.worldwildlife.org/site/SPageServer?pagename=donate_to_charity"><img src='images/wwf-2c5cc8bf.jpg'>
-          </a>
-
-        </div>
-        <div class='charities-list-item-description'>The World Wide Fund for Nature (WWF) is an international non-governmental organization working on issues regarding the conservation, research and restoration of the environment.</div>
-        <a class="charities-list-item-button" href="https://support.worldwildlife.org/site/SPageServer?pagename=donate_to_charity">Donate to WWF</a>
-      </li>
-    </ol>
-    <h3 class='other-charities'>
-      Or:
-      <a class="other-charities-link" href="http://www.charitynavigator.org/">Search for charities you might like</a>
-    </h3>
-  </section>
-</section>
+      <h1>Radiocomb</h1>
+      <h2 class='tagline'>You're never alone with a <span class="title">Radio Comb</span></span></h2>
+      <section class='video'>
+        <div id='player'></div>
+      </section>
+    </header>
+    <section class='donation-info'>
+      <h2>Although it's a pretty neat idea, Radio Comb probably isn't the best use of your ${ price }, Instead why not <span class="donation-info-message">donate ${ price } to a cool charity or non profit</span>?</h2>
+      <section class='charities'>
+        <h3>Here are some charities and non profit organisations I personally really like:</h3>
+        <ol class='charities-list'>
+          <li class='charities-list-item'>
+            <div class='charities-list-item-link'>
+                        <a href="http://wikimediafoundation.org/wiki/WMFJA085/en"><img src='images/wikimedia-56878495.jpg'>
+              </a>
+    
+            </div>
+            <div class='charities-list-item-description'>Wikimedia runs Wikipedia. Wikipedia is the #5 site on the web and serves 454 million different people every month - with billions of page views.</div>
+            <a class="charities-list-item-button" href="http://wikimediafoundation.org/wiki/WMFJA085/en">Donate to Wikimedia</a>
+          </li>
+          <li class='charities-list-item'>
+            <div class='charities-list-item-link'>
+                        <a href="https://www.charitywater.org/donate/"><img src='images/charity_water-5f311434.jpg'>
+              </a>
+    
+            </div>
+            <div class='charities-list-item-description'>charity: water is a non-profit bringing clean and safe drinking water to people in developing nations. With 100% of public donations can fund water projects.</div>
+            <a class="charities-list-item-button" href="https://www.charitywater.org/donate/">Donate to charity: water</a>
+          </li>
+          <li class='charities-list-item'>
+            <div class='charities-list-item-link'>
+                        <a href="http://donate.worldvision.org/"><img src='images/world_vision-0d4c2cd4.jpg'>
+              </a>
+    
+            </div>
+            <div class='charities-list-item-description'>World Vision is a Christian humanitarian organization dedicated to working with children, families and their communities worldwide to reach their full potential by tackling the causes of poverty and injustice</div>
+            <a class="charities-list-item-button" href="http://donate.worldvision.org/">Donate to World vision</a>
+          </li>
+          <li class='charities-list-item'>
+            <div class='charities-list-item-link'>
+                        <a href="https://support.worldwildlife.org/site/SPageServer?pagename=donate_to_charity"><img src='images/wwf-2c5cc8bf.jpg'>
+              </a>
+    
+            </div>
+            <div class='charities-list-item-description'>The World Wide Fund for Nature (WWF) is an international non-governmental organization working on issues regarding the conservation, research and restoration of the environment.</div>
+            <a class="charities-list-item-button" href="https://support.worldwildlife.org/site/SPageServer?pagename=donate_to_charity">Donate to WWF</a>
+          </li>
+        </ol>
+        <h3 class='other-charities'>
+          Or:
+          <a class="other-charities-link" href="http://www.charitynavigator.org/">Search for charities you might like</a>
+        </h3>
+      </section>
+    </section>
   </script> <script>
-  (function() {
-    var Radio;
-  
-    Radio = {
-      init: function() {
-        this.attachFormEvents();
-        return this.addVideo();
-      },
-      attachFormEvents: function() {
-        var form;
-        form = document.forms[0];
-        return form.addEventListener('submit', this.showDonationPage, false);
-      },
-      showDonationPage: function(e) {
-        var container, price, template, templateBody;
-        e.preventDefault();
-        container = document.getElementById('container');
-        template = document.getElementById('donation-template');
-        price = document.getElementById('price').value;
-        templateBody = template.innerHTML.toString().replace(/{ price }/g, price);
-        container.innerHTML = templateBody;
-        document.getElementsByClassName('video')[0].style.display = 'none';
-        document.getElementsByTagName('header')[0].style.height = 'auto';
-        document.getElementsByTagName('header')[0].style.height = 'auto';
-        return document.getElementsByTagName('header')[0].style.padding = '0 0 30px 0';
-      },
-      addVideo: function() {
-        var firstScriptTag, tag;
-        tag = document.createElement('script');
-        tag.src = "//www.youtube.com/iframe_api";
-        firstScriptTag = document.getElementsByTagName('script')[0];
-        return firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-      }
-    };
-  
-    Radio.init();
-  
-    window.onYouTubeIframeAPIReady = function() {
-      var player;
-      return player = new YT.Player('player', {
-        width: '100%',
-        height: '100%',
-        playerVars: {
-          autoplay: 0,
-          controls: 1,
-          showinfo: 0,
-          rel: 0
+    (function() {
+      var Radio;
+    
+      Radio = {
+        init: function() {
+          this.attachFormEvents();
+          return this.addVideo();
         },
-        videoId: 'bllzkS3oU-I'
-      });
-    };
-  
-  }).call(this);
-</script> </html>
+        attachFormEvents: function() {
+          var form;
+          form = document.forms[0];
+          return form.addEventListener('submit', this.showDonationPage, false);
+        },
+        showDonationPage: function(e) {
+          var container, price, template, templateBody;
+          e.preventDefault();
+          container = document.getElementById('container');
+          template = document.getElementById('donation-template');
+          price = document.getElementById('price').value;
+          templateBody = template.innerHTML.toString().replace(/{ price }/g, price);
+          container.innerHTML = templateBody;
+          document.getElementsByClassName('video')[0].style.display = 'none';
+          document.getElementsByTagName('header')[0].style.height = 'auto';
+          document.getElementsByTagName('header')[0].style.height = 'auto';
+          return document.getElementsByTagName('header')[0].style.padding = '0 0 30px 0';
+        },
+        addVideo: function() {
+          var firstScriptTag, tag;
+          tag = document.createElement('script');
+          tag.src = "//www.youtube.com/iframe_api";
+          firstScriptTag = document.getElementsByTagName('script')[0];
+          return firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        }
+      };
+    
+      Radio.init();
+    
+      window.onYouTubeIframeAPIReady = function() {
+        var player;
+        return player = new YT.Player('player', {
+          width: '100%',
+          height: '100%',
+          playerVars: {
+            autoplay: 0,
+            controls: 1,
+            showinfo: 0,
+            rel: 0
+          },
+          videoId: 'bllzkS3oU-I'
+        });
+      };
+    
+    }).call(this);
+  </script> </html>
